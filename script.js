@@ -37,6 +37,17 @@ function clearResult() {
     operator = '';
 }
 
+function clearEntry() {
+    if (currentInput !== '') {
+        const displayValue = display.value;
+        const currentInputLength = currentInput.length;
+        display.value = displayValue.slice(0, -currentInputLength);
+        currentInput = '';
+    } else if (display.value === '') {
+        clearResult();
+    }
+}
+
 function deleteLast() {
     let currentValue = display.value;
     if (currentValue.length > 0) {

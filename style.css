@@ -88,7 +88,6 @@ body {
 .btn.equals {
     background: #e74c3c;
     color: white;
-    grid-row: span 2;
 }
 
 .btn.equals:hover {
@@ -104,9 +103,6 @@ body {
     background: #8e44ad;
 }
 
-.btn.zero {
-    grid-column: span 2;
-}
 
 @media (max-width: 480px) {
     .calculator {
